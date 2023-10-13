@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/all.css" />
+  <link rel="stylesheet" href="css/all.min.css" />
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>Zay Shop</title>
+</head>
+
+<body>
+  <!-- Start Navbar Top -->
+  <nav class="nav navbar-expand bg-dark p-2 d-none d-lg-block">
+    <div class="container d-flex justify-content-between align-items-center text-light">
+      <div class="d-flex text-white-50 fw-light">
+        <li class="ms-2">
+          <i class="fa-regular fa-envelope"></i>
+          <a class="text-decoration-none text-light" href="#">info@gmail.com</a>
+        </li>
+        <li class="ms-2">
+          <i class="fa-solid fa-phone"></i>
+          <a class="text-decoration-none text-light" href="#">123-456-789</a>
+        </li>
+      </div>
+      <div>
+        <a class="text-decoration-none text-light p-2" href="#">
+          <i class="fa-brands fa-facebook"></i>
+        </a>
+        <a class="text-decoration-none text-light p-2" href="#">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a class="text-decoration-none text-light p-2" href="#">
+          <i class="fa-brands fa-twitter"></i>
+        </a>
+        <a class="text-decoration-none text-light p-2" href="#">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+      </div>
+    </div>
+  </nav>
+  <!-- End Navbar Top -->
+  <!-- Start Header -->
+  <nav class="navbar navbar-expand-lg navbar-light shadow">
+    <div class="container d-flex justify-content-between align-items-center">
+      <div>
+        <a class="navbar-brand text-success logo" href="#">Zay</a>
+      </div>
+      <button class="navbar-toggler btn-outline-light border-0 ms-auto" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="align-self-center d-lg-flex justify-content-lg-between d-lg-flex collapse navbar-collapse"
+        id="navbarTogglerDemo01">
+        <div class="flex-fill">
+          <ul class="nav navbar-nav d-flex justify-content-center">
+            <li class="nav-item">
+              <a class="nav-link ps-4" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link ps-4" aria-current="page" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active ps-4" aria-current="page" href="shop.html">Shop</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link ps-4" aria-current="page" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div class="navbar tools-user align-self-center d-flex">
+          <div class="d-lg-none flex-sm-fill mt-3 mb-4 col-7 col-sm-auto pr-3">
+            <div class="input-group">
+              <input type="text" class="form-control" id="inputMobileSearch" placeholder="Search ..." />
+              <div class="input-group-text">
+                <i class="fa fa-fw fa-search"></i>
+              </div>
+            </div>
+          </div>
+          <a class="text-decoration-none d-none p-2 text-black fw-bold user-icon pointer-event d-lg-inline" href="#">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </a>
+          <a class="text-decoration-none p-2 position-relative icon-shopping text-black fw-bold user-icon pointer-event" href="#">
+            <i class="fa-solid fa-cart-shopping"></i>
+          </a>
+          <a class="text-decoration-none p-2 position-relative icon-user text-black fw-bold user-icon pointer-event" href="#">
+            <i class="fa-solid fa-user"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- End Header -->
+
+  <!-- Start Content -->
+  <div class="container py-5">
+    <div class="row">
+      <div class="col-lg-3">
+        <h2 class="pb-3">Categories</h2>
+        <ul class="list-unstyled">
+          <li class="pb-3">
+            <a class="d-flex justify-content-between text-black px-0" data-bs-toggle="collapse" href="#collapseExample"
+              role="button" aria-expanded="false" aria-controls="collapseExample">Gender
+              <i class="fa fa-fw fa-chevron-circle-down mt-1"></i>
+            </a>
+            <ul class="list-unstyled collapse" id="collapseExample">
+              <li>
+                <a class="categories_branch" href="#">men</a>
+              </li>
+              <li>
+                <a class="categories_branch" href="#">Women</a>
+              </li>
+            </ul>
+          </li>
+          <li class="pb-3">
+            <a class="d-flex justify-content-between text-black px-0" data-bs-toggle="collapse" href="#collapseExample1"
+              role="button" aria-expanded="false" aria-controls="collapseExample">
+              Sale
+              <i class="fa fa-fw fa-chevron-circle-down mt-1"></i>
+            </a>
+            <ul class="list-unstyled collapse" id="collapseExample1">
+              <li>
+                <a class="categories_branch" href="#">Sport</a>
+              </li>
+              <li>
+                <a class="categories_branch" href="#">Luxury</a>
+              </li>
+            </ul>
+          </li>
+          <li class="pb-3">
+            <a class="d-flex justify-content-between text-black px-0" data-bs-toggle="collapse" href="#collapseExample3"
+              role="button" aria-expanded="false" aria-controls="collapseExample">
+              Product
+              <i class="fa fa-fw fa-chevron-circle-down mt-1"></i>
+            </a>
+            <ul class="list-unstyled collapse" id="collapseExample3">
+              <li>
+                <a class="categories_branch" href="#">Bag</a>
+              </li>
+              <li>
+                <a class="categories_branch" href="#">Sweather</a>
+              </li>
+              <li>
+                <a class="categories_branch" href="#">Sunglass</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="col-lg-9">
+        <div class="row">
+          <div class="col-md-6">
+            <ul class="list-inline  d-flex">
+              <li class="list-inline-item px-1 tabes">All</li>
+              <li class="list-inline-item px-1 tabes">men's</li>
+              <li class="list-inline-item px-1 tabes">woman's</li>
+            </ul>
+          </div>
+          <div class="col-md-6">
+            <select class="form-select" aria-label="Default select example">
+              <option selected>Featured</option>
+              <option value="2">A to Z</option>
+              <option value="3">item</option>
+            </select>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 py-4">
+            <div class="card shadow product">
+              <div class="position-relative">
+                <img src="./img/shop_01.jpg" class="card-img-top" alt="product_single">
+                <div class="card-img-overlay">
+                  <ul class="list-unstyled h-100 d-flex align-items-center justify-content-center flex-column gap-4 ">
+                    <li>
+                      <a class="btn btn-success text-white " href="#">
+                        <i class="fa-regular fa-heart"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a class=" btn btn-success text-white " href="#">
+                        <i class="fa-solid fa-eye"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="btn btn-success text-white " href="#">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                      </a>
+                    </li>
+
+                  </ul>
+
+                </div>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Oupidatat non</h5>
+                <p class="card-text">M/L/X/XL</p>
+
+                <div class="d-block text-center mx-auto">
+                  <span>
+                    <i class="fa-solid fa-star icon fs-5"></i>
+                    <i class="fa-solid fa-star icon fs-5"></i>
+                    <i class="fa-solid fa-star icon fs-5"></i>
+                    <i class="fa-solid fa-star icon-gry fs-5"></i>
+                    <i class="fa-solid fa-star icon-gry fs-5"></i>
+                  </span>
+                </div>
+
+                <span class="text-center d-block pt-2">$250.00</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 py-4">
+            <div class="card shadow product">
+              <div class="position-relative">
+                <img src="./img/shop_02.jpg" class="card-img-top" alt="product_single">
+                <div class="card-img-overlay">
+                  <ul class="list-unstyled h-100 d-flex align-items-center justify-content-center flex-column gap-4 ">
+                    <li>
+                      <a class="btn btn-success text-white " href="#">
+                        <i class="fa-regular fa-heart"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a class=" btn btn-success text-white " href="#">
+                        <i class="fa-solid fa-eye"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="btn btn-success text-white " href="#">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                      </a>
+                    </li>
+
+                  </ul>
+
+                </div>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Oupidatat non</h5>
+                <p class="card-text">M/L/X/XL</p>
+
+                <div class="d-block text-center mx-auto">
+                  <span>
+                    <i class="fa-solid fa-star icon fs-5"></i>
+                    <i class="fa-solid fa-star icon fs-5"></i>
+                    <i class="fa-solid fa-star icon fs-5"></i>
+                    <i class="fa-solid fa-star icon-gry fs-5"></i>
+                    <i class="fa-solid fa-star icon-gry fs-5"></i>
+                  </span>
+                </div>
+
+                <span class="text-center d-block pt-2">$250.00</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 py-4">
+            <div class="card shadow product">
+              <div class="position-relative">
+                <img src="./img/shop_03.jpg" class="card-img-top" alt="product_single">
+                <div class="card-img-overlay">
+                  <ul class="list-unstyled h-100 d-flex align-items-center justify-content-center flex-column gap-4 ">
+                    <li>
+                      <a class="btn btn-success text-white " href="#">
+                        <i class="fa-regular fa-heart"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a class=" btn btn-success text-white " href="#">
+                        <i class="fa-solid fa-eye"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="btn btn-success text-white " href="#">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                      </a>
+                    </li>
+
+                  </ul>
+
+                </div>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Oupidatat non</h5>
+                <p class="card-text">M/L/X/XL</p>
+
+                <div class="d-block text-center mx-auto">
+                  <span>
+                    <i class="fa-solid fa-star icon fs-5"></i>
+                    <i class="fa-solid fa-star icon fs-5"></i>
+                    <i class="fa-solid fa-star icon fs-5"></i>
+                    <i class="fa-solid fa-star icon-gry fs-5"></i>
+                    <i class="fa-solid fa-star icon-gry fs-5"></i>
+                  </span>
+                </div>
+
+                <span class="text-center d-block pt-2">$250.00</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 py-4">
+            <div class="card shadow product">
+              <div class="position-relative">
+                <img src="./img/shop_04.jpg" class="card-img-top" alt="product_single">
+                <div class="card-img-overlay">
+                  <ul class="list-unstyled h-100 d-flex align-items-center justify-content-center flex-column gap-4 ">
+                    <li>
+                      <a class="btn btn-success text-white " href="#">
+                        <i class="fa-regular fa-heart"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a class=" btn btn-success text-white " href="#">
+                        <i class="fa-solid fa-eye"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="btn btn-success text-white " href="#">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                      </a>
+                    </li>
+
+                  </ul>
+
+                </div>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Oupidatat non</h5>
+                <p class="card-text">M/L/X/XL</p>
+
+                <div class="d-block text-center mx-auto">
+                  <span>
+                    <i class="fa-solid fa-star icon fs-5"></i>
+                    <i class="fa-solid fa-star icon fs-5"></i>
+                    <i class="fa-solid fa-star icon fs-5"></i>
+                    <i class="fa-solid fa-star icon-gry fs-5"></i>
+                    <i class="fa-solid fa-star icon-gry fs-5"></i>
+                  </span>
+                </div>
+
+                <span class="text-center d-block pt-2">$250.00</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 py-4">
+            <div class="card shadow product">
+              <div class="position-relative">
+                <img src="./img/shop_05.jpg" class="card-img-top" alt="product_single">
+                <div class="card-img-overlay">
+                  <ul class="list-unstyled h-100 d-flex align-items-center justify-content-center flex-column gap-4 ">
+                    <li>
+                      <a class="btn btn-success text-white " href="#">
+                        <i class="fa-regular fa-heart"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a class=" btn btn-success text-white " href="#">
+                        <i class="fa-solid fa-eye"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="btn btn-success text-white " href="#">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Oupidatat non</h5>
+                <p class="card-text">M/L/X/XL</p>
+                <div class="d-block text-center mx-auto">
+                  <span>
+                    <i class="fa-solid fa-star icon fs-5"></i>
+                    <i class="fa-solid fa-star icon fs-5"></i>
+                    <i class="fa-solid fa-star icon fs-5"></i>
+                    <i class="fa-solid fa-star icon-gry fs-5"></i>
+                    <i class="fa-solid fa-star icon-gry fs-5"></i>
+                  </span>
+                </div>
+
+                <span class="text-center d-block pt-2">$250.00</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 py-4">
+            <div class="card shadow product">
+              <div class="position-relative">
+                <img src="./img/shop_06.jpg" class="card-img-top" alt="product_single">
+                <div class="card-img-overlay">
+                  <ul class="list-unstyled h-100 d-flex align-items-center justify-content-center flex-column gap-4 ">
+                    <li>
+                      <a class="btn btn-success text-white " href="#">
+                        <i class="fa-regular fa-heart"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a class=" btn btn-success text-white " href="#">
+                        <i class="fa-solid fa-eye"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="btn btn-success text-white " href="#">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                      </a>
+                    </li>
+
+                  </ul>
+
+                </div>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Oupidatat non</h5>
+                <p class="card-text">M/L/X/XL</p>
+
+                <div class="d-block text-center mx-auto">
+                  <span>
+                    <i class="fa-solid fa-star icon fs-5"></i>
+                    <i class="fa-solid fa-star icon fs-5"></i>
+                    <i class="fa-solid fa-star icon fs-5"></i>
+                    <i class="fa-solid fa-star icon-gry fs-5"></i>
+                    <i class="fa-solid fa-star icon-gry fs-5"></i>
+                  </span>
+                </div>
+
+                <span class="text-center d-block pt-2">$250.00</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 py-4">
+            <div class="card shadow product">
+              <div class="position-relative">
+                <img src="./img/shop_07.jpg" class="card-img-top" alt="product_single">
+                <div class="card-img-overlay">
+                  <ul class="list-unstyled h-100 d-flex align-items-center justify-content-center flex-column gap-4 ">
+                    <li>
+                      <a class="btn btn-success text-white " href="#">
+                        <i class="fa-regular fa-heart"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a class=" btn btn-success text-white " href="#">
+                        <i class="fa-solid fa-eye"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="btn btn-success text-white " href="#">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                      </a>
+                    </li>
+
+                  </ul>
+
+                </div>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Oupidatat non</h5>
+                <p class="card-text">M/L/X/XL</p>
+
+                <div class="d-block text-center mx-auto">
+                  <span>
+                    <i class="fa-solid fa-star icon fs-5"></i>
+                    <i class="fa-solid fa-star icon fs-5"></i>
+                    <i class="fa-solid fa-star icon fs-5"></i>
+                    <i class="fa-solid fa-star icon-gry fs-5"></i>
+                    <i class="fa-solid fa-star icon-gry fs-5"></i>
+                  </span>
+                </div>
+
+                <span class="text-center d-block pt-2">$250.00</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 py-4">
+            <div class="card shadow product">
+              <div class="position-relative">
+                <img src="./img/shop_08.jpg" class="card-img-top" alt="product_single">
+                <div class="card-img-overlay">
+                  <ul class="list-unstyled h-100 d-flex align-items-center justify-content-center flex-column gap-4 ">
+                    <li>
+                      <a class="btn btn-success text-white " href="#">
+                        <i class="fa-regular fa-heart"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a class=" btn btn-success text-white " href="#">
+                        <i class="fa-solid fa-eye"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="btn btn-success text-white " href="#">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                      </a>
+                    </li>
+
+                  </ul>
+
+                </div>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Oupidatat non</h5>
+                <p class="card-text">M/L/X/XL</p>
+
+                <div class="d-block text-center mx-auto">
+                  <span>
+                    <i class="fa-solid fa-star icon fs-5"></i>
+                    <i class="fa-solid fa-star icon fs-5"></i>
+                    <i class="fa-solid fa-star icon fs-5"></i>
+                    <i class="fa-solid fa-star icon-gry fs-5"></i>
+                    <i class="fa-solid fa-star icon-gry fs-5"></i>
+                  </span>
+                </div>
+
+                <span class="text-center d-block pt-2">$250.00</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 py-4">
+            <div class="card shadow product">
+              <div class="position-relative">
+                <img src="./img/shop_09.jpg" class="card-img-top" alt="product_single">
+                <div class="card-img-overlay">
+                  <ul class="list-unstyled h-100 d-flex align-items-center justify-content-center flex-column gap-4 ">
+                    <li>
+                      <a class="btn btn-success text-white " href="#">
+                        <i class="fa-regular fa-heart"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a class=" btn btn-success text-white " href="#">
+                        <i class="fa-solid fa-eye"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="btn btn-success text-white " href="#">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                      </a>
+                    </li>
+
+                  </ul>
+
+                </div>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Oupidatat non</h5>
+                <p class="card-text">M/L/X/XL</p>
+
+                <div class="d-block text-center mx-auto">
+                  <span>
+                    <i class="fa-solid fa-star icon fs-5"></i>
+                    <i class="fa-solid fa-star icon fs-5"></i>
+                    <i class="fa-solid fa-star icon fs-5"></i>
+                    <i class="fa-solid fa-star icon-gry fs-5"></i>
+                    <i class="fa-solid fa-star icon-gry fs-5"></i>
+                  </span>
+                </div>
+
+                <span class="text-center d-block pt-2">$250.00</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <nav aria-label="...">
+            <ul class="pagination pagination-lg justify-content-end">
+              <li class="page-item disabled " aria-current="page">
+                <span class="page-link active border-success  border-1 border-white ">1</span>
+              </li>
+              <li class="page-item"><a class="page-link text-dark" href="#">2</a></li>
+              <li class="page-item"><a class="page-link text-dark" href="#">3</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- End Content -->
+<!-- Start  Brand -->
+  <section class="py-5 bg-light">
+    <div class="container">
+      <div class="text-center col-lg-6 m-auto">
+        <h2 class="text-black-50 fs-1">Our Brands</h2>
+        <p class="mt-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod Lorem ipsum dolor sit amet.</p>
+      </div>
+      <div class=" col-lg-9 m-auto ">
+        <div class="row d-flex flex-row carousel slide" id="carouselExampleAutoplaying" data-bs-ride="carousel">
+          <div class="col-1 align-self-center">
+            <button class="carousel-control-prev " type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+              
+              <i class="fa-solid fa-angle-left previous-brand"></i>
+              <span class="visually-hidden">Previous</span>
+            </button>
+          </div>
+          <div class="col">
+            <div  class=" py-5 my-5" >
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="row">
+                    <div class="col-3 text-center">
+                      <a href="">
+                        <img class="img-fluid brand " src="./img/brand_01.png" alt="brand">
+                      </a>
+                    </div>
+                    <div class="col-3 text-center">
+                      <a href="">
+                        <img class="img-fluid brand" src="./img/brand_02.png" alt="brand">
+                      </a>
+                    </div>
+                    <div class="col-3 text-center">
+                      <a href="">
+                        <img class="img-fluid brand" src="./img/brand_03.png" alt="brand">
+                      </a>
+                    </div>
+                    <div class="col-3 text-center">
+                      <a href="">
+                        <img class="img-fluid brand" src="./img/brand_04.png" alt="brand">
+                      </a>
+                    </div>
+                    
+                  </div>
+                </div>
+                <div class="carousel-item ">
+                  <div class="row">
+                    <div class="col-3 text-center">
+                      <a href="">
+                        <img class="img-fluid brand" src="./img/brand_02.png" alt="brand">
+                      </a>
+                    </div>
+                    <div class="col-3 text-center">
+                      <a href="">
+                        <img class="img-fluid brand" src="./img/brand_03.png" alt="brand">
+                      </a>
+                    </div>
+                    <div class="col-3 text-center">
+                      <a href="">
+                        <img class="img-fluid brand" src="./img/brand_04.png" alt="brand">
+                      </a>
+                    </div>
+                    <div class="col-3 text-center">
+                      <a href="">
+                        <img class="img-fluid brand" src="./img/brand_01.png" alt="brand">
+                      </a>
+                    </div>
+                    
+                  </div>
+                </div>
+                <div class="carousel-item px-3 ">
+                  <div class="row">
+                    <div class="col-3 text-center">
+                      <a href="">
+                        <img class="img-fluid brand" src="./img/brand_03.png" alt="brand">
+                      </a>
+                    </div>
+                    <div class="col-3 text-center">
+                      <a href="">
+                        <img class="img-fluid brand" src="./img/brand_04.png" alt="brand">
+                      </a>
+                    </div>
+                    <div class="col-3 text-center">
+                      <a href="">
+                        <img class="img-fluid brand" src="./img/brand_02.png" alt="brand">
+                      </a>
+                    </div>
+                    <div class="col-3 text-center">
+                      <a href="">
+                        <img class="img-fluid brand" src="./img/brand_01.png" alt="brand">
+                      </a>
+                    </div>
+                    
+                  </div>
+                </div>
+                <div class="carousel-item ">
+                  <div class="row">
+                    <div class="col-3 text-center">
+                      <a href="">
+                        <img class="img-fluid brand" src="./img/brand_04.png" alt="brand">
+                      </a>
+                    </div> 
+                    <div class="col-3 text-center">
+                      <a href="">
+                        <img class="img-fluid brand" src="./img/brand_03.png" alt="brand">
+                      </a>
+                    </div>
+                    <div class="col-3 text-center">
+                      <a href="">
+                        <img class="img-fluid brand" src="./img/brand_02.png" alt="brand">
+                      </a>
+                    </div>
+                    <div class="col-3 text-center">
+                      <a href="">
+                        <img class="img-fluid brand" src="./img/brand_01.png" alt="brand">
+                      </a>
+                    </div>
+                    
+                  </div>
+                </div>
+        
+              </div>
+              
+              
+            </div>
+          </div>
+  
+          
+          <div class="col-1 align-self-center">
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+              <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span> -->
+              <i class="fa-solid fa-angle-right next-brand"></i>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- End Brand -->
+
+  <!-- Start Footer -->
+  <footer class="bg-dark">
+    <div class="container p-5">
+      <div class="row text-white-50">
+        <div class="col-12 col-md-4">
+          <h2 class="logo-footer pb-3 border-bottom border-opacity-10 border-light text-success">
+            zay shop
+          </h2>
+          <ul class="list-unstyled">
+            <li class="py-2">
+              <i class="fa-solid fa-location-dot"></i>
+              123 Consectetur at ligula 10660
+            </li>
+            <li class="py-2">
+              <i class="fa-solid fa-phone"></i>
+              <a href="tel:123-456-789">123-456-789</a>
+            </li>
+            <li class="py-2">
+              <i class="fa-solid fa-envelope"></i>
+              <a href="mailto:info@gmail.com">info@gmail.com</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-4">
+          <h2 class="logo-footer pb-3 border-bottom border-opacity-10 border-light text-white-50">
+            Products
+          </h2>
+          <ul class="list-unstyled">
+            <li class="py-2">
+              <a href="#">Luxury</a>
+            </li>
+            <li class="py-2">
+              <a href="#">Sport Wear</a>
+            </li>
+            <li class="py-2">
+              <a href="#">Men's Shoes</a>
+            </li>
+            <li class="py-2">
+              <a href="#">Women's Shoes</a>
+            </li>
+            <li class="py-2">
+              <a href="#">Popular Dress</a>
+            </li>
+            <li class="py-2">
+              <a href="#">Gym Accessories</a>
+            </li>
+            <li class="py-2">
+              <a href="#">Sport Shoes</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-4">
+          <h2 class="logo-footer pb-3 border-bottom border-opacity-10 border-light text-white-50">
+            Further Info
+          </h2>
+          <ul class="list-unstyled">
+            <li class="py-2">
+              <a href="#">Home</a>
+            </li>
+            <li class="py-2">
+              <a href="#">About Us</a>
+            </li>
+            <li class="py-2">
+              <a href="#">Shop Locations</a>
+            </li>
+            <li class="py-2">
+              <a href="#">FAQs</a>
+            </li>
+            <li class="py-2">
+              <a href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row text-light mb-4">
+        <div class="col-12 mb-3">
+          <div class="w-100 my-3 border-top border-opacity-10 border-light"></div>
+        </div>
+        <div class="col-auto me-auto">
+          <ul class="list-inline text-left footer-icons">
+            <li class="list-inline-item border border-light rounded-circle text-center">
+              <a class="text-light text-decoration-none" target="_blank" href="http://facebook.com/"><i
+                  class="fab fa-facebook-f fa-lg fa-fw so-icon"></i></a>
+            </li>
+            <li class="list-inline-item border border-light rounded-circle text-center">
+              <a class="text-light text-decoration-none" target="_blank" href="https://www.instagram.com/"><i
+                  class="fab fa-instagram fa-lg fa-fw so-icon"></i></a>
+            </li>
+            <li class="list-inline-item border border-light rounded-circle text-center">
+              <a class="text-light text-decoration-none" target="_blank" href="https://twitter.com/"><i
+                  class="fab fa-twitter fa-lg fa-fw so-icon"></i></a>
+            </li>
+            <li class="list-inline-item border border-light rounded-circle text-center">
+              <a class="text-light text-decoration-none" target="_blank" href="https://www.linkedin.com/"><i
+                  class="fab fa-linkedin fa-lg fa-fw so-icon"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-auto">
+          <label class="sr-only" for="subscribeEmail">Email address</label>
+          <div class="input-group mb-2">
+            <input type="text" class="form-control bg-dark border-light border-opacity-10" id="subscribeEmail"
+              placeholder="Email address" fdprocessedid="5u37w" />
+            <div class="input-group-text btn btn-success text-light">
+              Subscribe
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bg-black w-100 text-white-50">
+      <div class="container py-3">
+        <div class="fs-5 text-center mb-3">
+          copyright &copy; 2023 By Walid Fawzy
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- End Footer -->
+
+  <script src="js/all.js"></script>
+  <script src="js/all.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  
+</body>
+
+</html>
